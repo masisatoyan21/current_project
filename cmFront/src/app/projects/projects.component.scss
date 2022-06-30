@@ -1,0 +1,19 @@
+.project-stage-app{
+    width: 434px;
+    margin-top: 48px;
+    padding: 20px 25px;
+    .project-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-user-name{
+        margin-top: 20px;
+        .user-name{
+            color: #A9A9A9;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+}

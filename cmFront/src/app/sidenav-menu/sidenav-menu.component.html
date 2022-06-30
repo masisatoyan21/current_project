@@ -1,0 +1,39 @@
+<div class="sidenav menu">
+    <div class="header">
+        <img class="logo" src="../../assets/img/logo.svg" alt="...">
+        <p class="texts text">BRAIN FORS</p> 
+    </div>
+    <hr class="under-line-header">
+    <div class="nav-items">
+        <ul class="item-list">
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" *ngFor = "let item of equipment" class="item">
+                <a [routerLink]="item.path">
+                    <img [src]="item.imagePath" alt="">
+                    <span class="title">{{item.title}}</span>
+                </a>
+
+                <ng-container *ngIf = "item.submenu && item.submenu.length > 0">
+                    <div class="submenu-items">
+                        <ng-container *ngFor="let submenu of item.submenu">
+                            <a [routerLink]="submenu.path" class="submenu-items-one" >
+                                <img [src]="submenu.imagePath" alt="">
+                                <span class="title">{{submenu.title}}</span>
+                            </a>
+                        </ng-container>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf = "item.submenues && item.submenues.length > 0">
+                    <div class="submenues-items-settigs">
+                        <ng-container *ngFor="let submenues of item.submenues">
+                            <a [routerLink]="submenues.path" class="submenu-items-tow" >
+                                <img [src]="submenues.imagePath" alt="">
+                                <span class="title">{{submenues.title}}</span>
+                            </a>
+                        </ng-container>
+                    </div>
+                </ng-container>
+            </li>
+        </ul>
+    </div>
+
+</div>

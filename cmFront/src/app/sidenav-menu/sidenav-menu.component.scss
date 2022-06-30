@@ -1,0 +1,99 @@
+.sidenav{
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: #11493E;
+    position: relative;
+    .header{
+        display: flex;
+        align-items: center;
+        margin: 12px 0 12px 27px;
+        .logo{
+            width: 53px;
+            height: 33px;
+        }
+        .texts{
+            color: #FCFCFC;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 0px 18px;
+            position: relative;
+        }
+        .text{
+            position: static;
+            width: 98px;
+            height: 18px;
+            left: 71px;
+            top: 7.5px;
+        }
+        
+    }
+    .under-line-header{
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .nav-items{
+        .item-list{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 7px;
+            .item{
+                display: flex;
+                align-items: center; 
+                padding-top: 13px;
+                padding-bottom: 12px;
+                border-radius: 50px 0px 0px 50px;
+                padding-left: 27px;
+                transition: all .5s;
+                margin-top: 5px;
+                flex-wrap: wrap;
+                a {
+                    text-decoration: none;
+                }
+                .title{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #FCFCFC;
+                    margin-left: 16px;
+                 }
+            }
+            .submenu-items{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-left: 40px;
+                .submenu-items-one{
+                    margin-top: 20px;
+                }
+            }
+            .submenues-items-settigs{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-left: 40px;
+                
+                .submenu-items-tow{
+                    margin-top: 20px;
+                }
+            }
+        } 
+    }
+}
+.menu{
+    display: flex;
+    flex-direction: column;     
+}
+
+.active{
+    background: #347474 !important;
+}
