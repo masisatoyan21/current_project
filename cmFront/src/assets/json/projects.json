@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Stage App",
+        "title": "Geworg Arakel",
         "desc": "description",
         "status": "finished",
         "deadline": "6.28.2022",
@@ -25,6 +25,78 @@
             "surname":"surname",
             "photo": "photo"
         }
+    ],
+    "categories":[
+        "javascript",
+        "angular",
+        "MYSQL",
+        "YII / YII2"
+    ]
+    },
+    {
+        "id": 2,
+        "title": "Geworg Arakel",
+        "desc": "description",
+        "status": "finished",
+        "deadline": "6.28.2022",
+        "completed": 90,
+        "lead": {
+            "id": 1,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        },
+        "developers":[
+         {
+            "id": 1,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        },
+        {
+            "id": 2,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        }
+    ],
+    "categories":[
+        "javascript",
+        "angular",
+        "MYSQL",
+        "YII / YII2"
+    ]
+    },
+    {
+        "id": 3,
+        "title": "Geworg Arakel",
+        "desc": "description",
+        "status": "finished",
+        "lead": {
+            "id": 1,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        },
+        "developers":[
+         {
+            "id": 1,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        },
+        {
+            "id": 2,
+            "name":"employee",
+            "surname":"surname",
+            "photo": "photo"
+        }
+    ],
+    "categories":[
+        "javascript",
+        "angular",
+        "MYSQL",
+        "YII / YII2"
     ]
     }
 ]

@@ -13,6 +13,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { DayoffsComponent } from './dayoffs/dayoffs.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { DalendarComponent } from './dalendar/dalendar.component';
+import { CreateProjectComponent } from './create-project/create-project.component';
 
 const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'dayoffs', component: DayoffsComponent},
   {path: 'holidays', component: HolidaysComponent},
   {path: 'calendar', component: DalendarComponent},
+  {path: 'create-project', component: CreateProjectComponent}
 ];
 
 @NgModule({

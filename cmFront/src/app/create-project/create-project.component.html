@@ -1,0 +1,62 @@
+
+<div class="create-project">
+    <form action="" [formGroup]="createProjectForm">
+
+    <div class="white-block">
+        <mat-form-field appearance="fill" class="mat-border">
+            <span class="mat-form-title">Title</span>
+            <mat-label class="mat-color">e.g. john@gmail.com</mat-label>
+            <input formControlName="title" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="mat-border">
+            <span class="mat-form-status">Status</span>
+            <mat-label class="mat-color">Ongoing</mat-label>
+            <mat-select formControlName="status" class="select-color">
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="mat-border">
+            <span class="mat-form-country">Country</span>
+            <mat-label class="mat-color">e.g. john@gmail.com</mat-label>
+            <mat-select >
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="mat-border">
+            <span class="mat-form-clientName">Client name</span>
+            <mat-label class="mat-color">e.g. john@gmail.com</mat-label>
+            <input formControlName="client_name" matInput>
+        </mat-form-field>
+    </div>
+    <div class="desc-block">
+        <mat-form-field appearance="fill" class="mat-border-desc">
+            <span class="mat-form-desc">Description</span>
+            <mat-label class="mat-colors">e.g. john@gmail.com</mat-label>
+            <input formControlName="desc" matInput>
+        </mat-form-field>
+    </div>
+    <div class="chips-block">
+        <mat-form-field class="example-chip-list" appearance="fill" class="mat-form-chips">
+            <mat-label class="fav-tech">Favorite Technologies</mat-label>
+            <mat-chip-list #chipList aria-label="Fruit selection">
+              <mat-chip *ngFor="let fruit of fruits" (removed)="remove(fruit)" class="chipc-style">
+                {{fruit.name}}
+                <button matChipRemove>
+                  <mat-icon>cancel</mat-icon>
+                </button>
+              </mat-chip>
+              <input placeholder="New fruit..."
+                     [matChipInputFor]="chipList"
+                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                     [matChipInputAddOnBlur]="addOnBlur"
+                     (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+            <hr>
+          </mat-form-field>
+    </div>
+    <button (click)="addProject()" class="ctreating">Create</button>
+</form>
+
+</div>

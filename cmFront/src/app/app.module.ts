@@ -19,7 +19,17 @@ import { EmployeeComponent } from './employee/employee.component';
 import { DalendarComponent } from './dalendar/dalendar.component';
 import { DayoffsComponent } from './dayoffs/dayoffs.component';
 import { HolidaysComponent } from './holidays/holidays.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatInputModule} from '@angular/material/input';
+import { CreateProjectComponent } from './create-project/create-project.component';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,13 +47,23 @@ import {HttpClientModule} from '@angular/common/http'
     EmployeeComponent,
     DalendarComponent,
     DayoffsComponent,
-    HolidaysComponent
+    HolidaysComponent,
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatChipsModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,21 +1,52 @@
-<div class="project-stage-app">
-    <div class="project-header">
-        <div class="project-name">
-            <img src="../../assets/img/stage.svg.svg" alt="">
-        </div>
-        <div class="project-elips-group">
-            <img src="../../assets/img/pointer.svg.svg" alt="">
-        </div>
+<div class="project-hed-block">
+  <div class="project-header">
+    <div class="project-header-menu">
+      <div class="menu-filter">
+        <button mat-button [matMenuTriggerFor]="menu" class="project-menu">Sort</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="filter">
+        <img src="../../assets/img/filterr.svg   " alt="" class="filter-img">
+      </div>
     </div>
-    <div class = "project-user-name">
-        <span class="user-name">
+
+    <a routerLink="/create-project">
+      <div class="creat-new-project">
+        <img src="../../assets/img/createNewProject.svg" alt="" class="new-project-img">
+        <span class="creat-project">Create project</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="users-block">
+    <div *ngFor="let projects of data"  class="projects">
+      <div class="project-block">
+        <div class="header">
+          <img src="../../assets/img/stage.svg.svg" alt="" class="logo">{{projects.title}}
+          <img src="../../assets/img/pointer.svg.svg" alt="" class="elipse">
+        </div>
+        <div class="lead">
+          <div class="lend-user">
             <img src="../../assets/img/userimg.svg.svg" alt="">
-            Geworg Arakel
-        </span>
-        
+            <span class="lead-name">{{projects.client_name}}</span>
+          </div>
+          <div class="finished">
+            <span class="lead-finish">Finished</span>
+          </div>
+        </div>
+        <div class="description">
+          <span>{{projects.desc}}</span>
+        </div>
+        <span class="technologies-name">Technologies</span>
+        <div class="technologies">
+          <div *ngFor="let category of projects.technologies" class="stripe">
+            <span>{{category.name}}</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="">
-        <span class="user-work">Developers</span>
-    </div>
-    <span></span>
+  </div>
 </div>

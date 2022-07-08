@@ -1,12 +1,13 @@
 import { Employee } from "./employee";
 
 export interface Projects {
-    id: number;
+    id: number; //petq che
     title: string;
     desc: string;
     status: string;
-    deadline: string;
-    completed: number;
+    deadline: string; 
+    completed: number; //petq che
     lead: Employee;
     developers: Employee[];
+    categories: string[];
 }

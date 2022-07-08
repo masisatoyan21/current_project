@@ -1,19 +1,195 @@
-.project-stage-app{
-    width: 434px;
-    margin-top: 48px;
-    padding: 20px 25px;
+.project-hed-block{
+    padding: 49px 84px 0 84px;
     .project-header{
         display: flex;
         justify-content: space-between;
-    }
-    .project-user-name{
-        margin-top: 20px;
-        .user-name{
-            color: #A9A9A9;
+        .project-header-menu{
+            display: flex;
+            .menu-filter{
+                .project-menu{
+                    border: none;
+                    background: #347474;
+                    border-radius: 8px; 
+                    width: 123px;
+                    height: 42px;
+                    // margin-top: 38px;
+                    // margin-left: 68px;
+                    color: #FFFFFF;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+            .filter{
+                width: 55px;
+                height: 42px;
+                background-color: #347474;
+                // margin-top: 38px;
+                margin-left: 15px;
+                border-radius: 8px; 
+                .filter-img{
+                    // display: block;
+                    // margin-left: auto;
+                    // margin-right: auto;
+                    margin-left: 32%;
+                    margin-top: 22%;
+                }
+            }
+        }
+        .creat-new-project{
+            width: 200px;
+            height: 45px;
+            background-color: #347474;
+            border-radius: 8px;
+            // margin-top: 37px;
+            margin-right: 71px;
+            color: #FFFFFF;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 16px;
+            .new-project-img{
+                margin: 12px 0 0 8px; 
+            }
+            .creat-project{
+                display: block;
+               margin: -23px 0 0 45px;
+                // ???
+            }
         }
     }
+    .users-block{
+        display: flex;
+        .projects{
+            margin-top: 48px;
+            margin-right: 18px;
+           .project-block{
+               padding: 12px;
+               width: 467px;
+               background: #FFFFFF;
+               border-radius: 8px;
+               .header{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                  .logo{
+                   width: 109px;
+                   height: 22px;
+                  } 
+               }
+               .lead{
+                   margin-top: 22px;
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   .lend-user{
+                       .lead-name{
+                           color: #A9A9A9;
+                           font-family: 'Montserrat';
+                           font-style: normal;
+                           font-weight: 400;
+                           font-size: 12px;
+                           line-height: 15px;
+                           margin-left: 5px;
+                       }
+                   }
+                   .finished{
+                       background-color: #347474;
+                       width: 69px;
+                       height: 21px;
+                       border-radius: 8px 0px 0px 8px;
+                       .lead-finish{
+                           font-family: 'Montserrat';
+                           font-style: normal;
+                           font-weight: 400;
+                           font-size: 12px;
+                           line-height: 15px;
+                           color: #FFFFFF;
+                           display: block;
+                           text-align: center;
+                           margin-top: 4px; 
+                       }
+                   }
+               }
+               .description{
+                   margin-top: 26px;
+                //    background-color: #bfeded ; 
+                   border-radius: 5px;
+                   .mat-form{
+                       width: 100%; 
+                       .label-mat{
+                           color: black;
+                       }
+                   }
+               }
+               .technologies-name{
+                color: #A9A9A9;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+               }
+               .technologies{
+                    display: flex;
+                   margin-top: 22px; 
+                   border-radius: 5px;
+                   .stripe{
+                    background: #4C5F79;
+                    border-radius: 7px;
+                    margin-right: 5px;
+                    width: 62px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                   }
+                   .mysql{
+                    background: #4C5F79;
+                    border-radius: 7px;
+                    margin-right: 5px;
+                    width: 62px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                   }
+                   .yii-yii2{
+                    background: #4C5F79;
+                    border-radius: 7px;
+                    margin-right: 5px;
+                    width: 62px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                   }
+                   .angular{
+                    background: #4C5F79;
+                    border-radius: 7px;
+                    width: 62px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px; 
+                    text-align: center;               
+                   }
+                   .example-chip-list{
+                       width: 100%;
+                       .technologies{
+                           color: black;
+                       }
+                       ::placeholder{
+                           color: black;
+                       }
+                   }
+               }
+           }
+       }
+    }
 }
+
+
